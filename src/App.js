@@ -3,7 +3,7 @@ import './App.css';
 function App() {
   return (
     <>
-      <h1>salom</h1>
+    <h1>bnnma</h1>
     </>
   );
 }
