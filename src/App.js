@@ -1,4 +1,5 @@
 import './App.css';
+import Imgs from "./Assets./Img"
 
 function App() {
   return (
