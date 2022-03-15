@@ -1,6 +1,7 @@
 .wrapper {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    height: 100%;
 }
 .center-header {
     display: flex;
@@ -10,14 +11,15 @@
 
 }
 .heading-whats {
+    position: relative;
     display: flex;
     align-items: center;
     font-weight: 600;
     font-size: 22px;
-    color: #828282;
     padding: 20px;  
 }
-.heading-whats p{
+.heading-title{
+    color: #828282;
     margin-left: 20px;
 }
 .icons-list {
@@ -34,7 +36,6 @@
     border-bottom: 1px solid #D8D8D8;
 }
 .icons-btn {
-    margin-left: auto;
     border-radius: 30px;
     border: none;
     cursor: pointer;
@@ -42,4 +43,64 @@
     background-color: #1DA1F2;
     color: #ffffff;
     margin-bottom: 10px;
+    margin-left: 85%;
+}
+.email-text  {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #000000;
+    opacity: 0.6;
+    margin-left: 15px;
+}
+.heading-designsta {
+    display: inline;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 27px;
+    color: #000000;
+}
+.text-flex {
+    display: flex;  
+}
+.flex-right {
+    margin-left: 15px;
+}
+.center-title {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #000000;
+}
+.border {
+    border-bottom: 1px solid #000;
+}
+.list-item {
+    margin-top: 30px;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.list-item a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    color: #536471;
+}
+.yelow {
+    color: #18B54E;
+}
+.red{
+    color: red;
+}
+.position-points {
+    position: absolute;
+    right: 40px;
+}
+.inner {
+    margin-left: 10px;
 }

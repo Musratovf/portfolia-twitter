@@ -5,12 +5,70 @@
 }
 body {
     font-family: 'Segoe UI', 'Arial', Sans-serif;
-    margin: 10px;
+    margin: 0;
     padding: 0;
 }
 .container-center {
     max-width: 900px;
-    width: 900px;
     border-left: 1px solid #D8D8D8;
     border-right: 1px solid #D8D8D8;   
+}
+.left {
+    padding-left: 40px;
+    width: 280px;
+}
+.ota {
+    display: flex;
+    justify-content: space-between;
+}
+.left__list {
+    list-style: none;
+}
+.left__list a{
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    color: #000000;
+}
+.left__list-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+}
+.left__list-item a span{
+    margin-left: 20px;
+}
+.btn-points {
+    padding: 12px 80px;
+    cursor: pointer;
+    border: none;
+    border-radius: 35px;
+    background-color: #1D9BF0;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 18px;
+}
+.left-sticki {
+    display: flex;
+    align-items: center;
+    bottom: 0;
+}
+.left-sticki a {
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    color: #000000;
+    opacity: 0.6;
+}
+.btn-tweet {
+    background-color: transparent;
+    border: none;
+    margin-left: auto;
+    cursor: pointer;
+}
+.logo-link {
+    margin: 30px 0 50px 0;
+
 }

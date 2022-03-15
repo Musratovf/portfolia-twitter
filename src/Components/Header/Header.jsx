@@ -14,9 +14,8 @@ import Points from "../../Assets/Img/points.png"
 const Header = () => {
     return (
         <div className="left">
-            <div className="container">
             <a href="#link">
-                <img src={logoTwitter} width={40} height={33} alt="twitter-logo" />
+                <img className="logo-link" src={logoTwitter} width={40} height={33} alt="twitter-logo" />
                 </a>
             <ul className="left__list">
                 <li className="left__list-item">
@@ -53,17 +52,16 @@ const Header = () => {
                     <a href="#link"><span>More</span></a>
                 </li>
                 <li className="left__list-item">
-                    <button className="btn-tweet">Tweet</button>
+                    <button className="btn-points">Tweet</button>
                 </li>
             </ul>
-            </div>
             <div className="left-sticki">
                 <img src={Bobur} alt="bobur" />
                 <div className="inner">
                 <strong>Bobur</strong>
                 <p><a href="mailto:example@gmail.com">@bobur_mavlonov</a></p>
                 </div>
-                <button className="btn-points"><img src={Points} alt="Points" /></button>
+                <button className="btn-tweet"><img src={Points} alt="Points" /></button>
             </div>
         </div>
     );
