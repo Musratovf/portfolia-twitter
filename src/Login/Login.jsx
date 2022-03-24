@@ -4,15 +4,13 @@ import TwitterLogo from '../img/twitter-logo.svg';
 import useAuth from '../Hooks/UseAuth';
 import useUser from '../Hooks/UseUser';
 import './Login.css';
-import { Navigate } from "react-router";
 
 function SingUp() {
     let inputtel = useRef()
-    let tellink = useRef()
     let emaillink = useRef()
 
-    let [token, setToken] = useAuth()
-    let [user, setUser] = useUser()
+    let [setToken] = useAuth()
+    let [setUser] = useUser()
     return (
         <>
         <div className="containerlogin">
