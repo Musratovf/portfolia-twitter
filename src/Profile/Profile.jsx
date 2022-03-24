@@ -16,8 +16,6 @@ import Ustoz from "../img/bobur.png";
 import mushtariy from "../img/mushtariy.png"
 import uzim from "../img/uzim.jpg"
 import boburs from "../img/boburs.png";
-import Muhammad from "../img/Muhammad aka.jpg";
-import Xojiakbar from "../img/Xojiakbar aka.jpg";
 import useUser from "../Hooks/UseUser";
 import commentLogo from '../img/comment.svg';
 import retweetLogo from '../img/retweet.svg';
