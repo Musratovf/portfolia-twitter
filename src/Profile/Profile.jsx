@@ -1,7 +1,6 @@
-import { Navigate, NavLink } from "react-router-dom"
-import useAuth from '../Hooks/UseAuth';
+import { NavLink } from "react-router-dom"
 import './Profile.css';
-import { useRef, useState } from "react";
+import { useRef } from "react";
 import TwitterLogo from '../img/twitter-logo.svg';
 import HomeLogo from '../img/home outline.svg';
 import ProfileLogo from '../img/profile outline.svg';
@@ -29,7 +28,6 @@ import locationIcon from '../img/Frame.svg';
 import CopyIcon from '../img/Frame (1).svg';
 import BirthdayIcon from '../img/Frame (2).svg';
 import JoinderIcon from '../img/Frame (3).svg';
-import TwitterWallpaper from '../img/twitterwallpaper.jpg';
 
 
 function Profile() {
@@ -44,8 +42,6 @@ function Profile() {
     let xojibtn = useRef()
     let muhammadbtn = useRef()
 
-    let countcomment = 122;
-    let value = 122;
     let counter = useRef()
     let counter1 = useRef()
     let counter2 = useRef()
