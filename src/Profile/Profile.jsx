@@ -1,7 +1,6 @@
-import { Navigate, NavLink } from "react-router-dom"
-import useAuth from '../Hooks/UseAuth';
+import { NavLink } from "react-router-dom"
 import './Profile.css';
-import { useRef, useState } from "react";
+import { useRef } from "react";
 import TwitterLogo from '../img/twitter-logo.svg';
 import HomeLogo from '../img/home outline.svg';
 import ProfileLogo from '../img/profile outline.svg';
@@ -29,7 +28,6 @@ import locationIcon from '../img/Frame.svg';
 import CopyIcon from '../img/Frame (1).svg';
 import BirthdayIcon from '../img/Frame (2).svg';
 import JoinderIcon from '../img/Frame (3).svg';
-import TwitterWallpaper from '../img/twitterwallpaper.jpg';
 
 
 function Profile() {
@@ -44,8 +42,6 @@ function Profile() {
     let xojibtn = useRef()
     let muhammadbtn = useRef()
 
-    let countcomment = 122;
-    let value = 122;
     let counter = useRef()
     let counter1 = useRef()
     let counter2 = useRef()
@@ -108,7 +104,7 @@ function Profile() {
                 <img className="Profile__link--img" src={Ustoz} alt="img" />
                 <span className="header__link--span">
                 <h2 className="Profile__link-title">{data.username}</h2>
-                <a className="Profile__link--link" href="#">{data.email}</a>
+                <a className="Profile__link--link" href="#link">{data.email}</a>
                 </span>
                 <img className="Profile__link--logo" src={MoreLogo} alt="img" />
             </NavLink>
@@ -401,24 +397,24 @@ function Profile() {
         </div>
         <ul className="footer__list">
             <li className="footer__item">
-                <a className="footer__link" href="#">Terms of Service</a>
+                <a className="footer__link" href="#link">Terms of Service</a>
             </li>
             <li className="footer__item">
-                <a className="footer__link" href="#">Privacy Policy</a>
+                <a className="footer__link" href="#link">Privacy Policy</a>
             </li>
             <li className="footer__item">
-                <a className="footer__link" href="#">Cookie Policy</a>
+                <a className="footer__link" href="#link">Cookie Policy</a>
             </li>
         </ul>
         <ul className="footer__list">
             <li className="footer__item">
-                <a className="footer__link" href="#">Imprint</a>
+                <a className="footer__link" href="#link">Imprint</a>
             </li>
             <li className="footer__item">
-                <a className="footer__link" href="#">Ads Info</a>
+                <a className="footer__link" href="#link">Ads Info</a>
             </li>
             <li className="footer__item">
-                <a className="footer__link" href="#">© 2021 Twitter, Inc.</a>
+                <a className="footer__link" href="#link">© 2021 Twitter, Inc.</a>
             </li>
         </ul>
         </footer>

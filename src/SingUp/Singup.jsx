@@ -1,4 +1,4 @@
-import {Routes, Route, NavLink, useLocation, Navigate, Outlet} from "react-router-dom";
+import { NavLink, useLocation} from "react-router-dom";
 import { useRef } from "react";
 import TwitterLogo from '../img/twitter-logo.svg';
 import './Singup.css';
@@ -19,7 +19,7 @@ function SingUp() {
     
     let [token, setToken] = useAuth()
     
-    if(token == 'bor' && pathname === '/SingUp'){
+    if(token === 'bor' && pathname === '/SingUp'){
         setToken('otish mumkin')
     }
 
@@ -41,15 +41,15 @@ function SingUp() {
             }else if(inputtel.current.value < 10) {
                 inputtel.current.style.border = '1px solid red'
                 inputtel.current.setAttribute('placeholder', 'your tel should not be smaller than 10')
-            }else if(selectyear.current.value == 'year' && selectday.current.value == 'day' && selectmonth.current.value == 'month') {
+            }else if(selectyear.current.value === 'year' && selectday.current.value === 'day' && selectmonth.current.value === 'month') {
                 selectyear.current.style.border = '1px solid red';
                 selectday.current.style.border = '1px solid red';
                 selectmonth.current.style.border = '1px solid red';
-            }else if(selectyear.current.value == 'year') {
+            }else if(selectyear.current.value === 'year') {
                 selectyear.current.style.border = '1px solid red';
-            }else if(selectday.current.value == 'day') {
+            }else if(selectday.current.value === 'day') {
                 selectday.current.style.border = '1px solid red';
-            }else if(selectmonth.current.value == 'month') {
+            }else if(selectmonth.current.value === 'month') {
                 selectmonth.current.style.border = '1px solid red';
             }else{
                 setToken('otish mumkin')
@@ -61,14 +61,14 @@ function SingUp() {
         <NavLink ref={emaillink} className="form__link2" to="/SingUp" onClick={(e) => {
             inputtel.current.setAttribute('placeholder', 'E-mail')
             inputtel.current.setAttribute('type', 'email')
-            inputtel.current.setAttribute('pattern', '^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$')
+            inputtel.current.setAttribute('pattern', '^([a-z0-9_-]+)@([a-z-]+)([a-z]{2,6})$')
             e.target.style.display = 'none';
             tellink.current.style.display = 'block';
         }}>Use email</NavLink>
         <NavLink ref={tellink} className="form__tellink2" to="/SingUp" onClick={(e) => {
             inputtel.current.setAttribute('placeholder', 'Phone Number')
             inputtel.current.setAttribute('type', 'tel')
-            inputtel.current.setAttribute('pattern', '^(?:(?:\(?(?:00|\+)([1-4]\d\d|[1-9]\d?)\)?)?[\-\.\ \\\/]?)?((?:\(?\d{1,}\)?[\-\.\ \\\/]?){0,})(?:[\-\.\ \\\/]?(?:#|ext\.?|extension|x)[\-\.\ \\\/]?(\d+))?$')
+            inputtel.current.setAttribute('pattern', '^(?:(?:?(?:00|)([1-4]|[1-9]?)?)?[\\]?)?((?:?{1,}?[\\]?){0,})(?:[\\]?(?:#|ext?|extension|x)[\\]?(+))?$')
             e.target.style.display = 'none';
             emaillink.current.style.display = 'block';
         }}>Use Tel</NavLink>
