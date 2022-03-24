@@ -1,7 +1,6 @@
-import { Navigate, NavLink } from "react-router-dom"
-import useAuth from '../Hooks/UseAuth';
+import { NavLink } from "react-router-dom"
 import './Home.css'
-import { useRef, useState } from "react";
+import { useRef } from "react";
 import TwitterLogo from '../img/twitter-logo.svg'
 import HomeLogo from '../img/home outline.svg'
 import ProfileLogo from '../img/profile outline.svg'
@@ -42,8 +41,6 @@ function Home() {
     let tweet__btn = useRef()
     let [obj] = useUser()
 
-    let countcomment = 122;
-    let value = 122;
     let counter = useRef()
     let counter1 = useRef()
     let counter2 = useRef()
